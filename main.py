@@ -3,9 +3,14 @@ def main():
         text = get_book_text(book_path)
         num_words = get_num_words(text)
         lower_text = lowered_string(text)
-        letter = input("Enter the letter you would like to count: ")
-        count = lower_text.count(letter)
-        print(f"'{letter}': {count}")
+        letter = {}
+        for character in lower_text:
+                if character in letter:
+                        letter = letter
+                else:
+                        count = lower_text.count(character)
+                        letter['{character}'] = count
+        print(f"{letter}")
 
 
 def get_num_words(text):
