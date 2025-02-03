@@ -14,7 +14,7 @@ def main():
         print("--- Begin report of books/frankenstein.txt ---")
         print(f"{num_words} words found in the document")
         print("")
-        for key in my_dict:
+        for key in letter:
                 print("The '{key}' character was found {item} times")
 
 
