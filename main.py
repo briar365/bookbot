@@ -10,6 +10,7 @@ def main():
                 else:
                         letter[character] = 1
         letter = dict(sorted(letter.items(), key=lambda item: item[1], reverse = True))
+        letter = {key: value for key, value in letter.items() if key.isalpha()}
         print(letter)
 
 
