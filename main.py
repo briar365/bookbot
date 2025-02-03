@@ -6,10 +6,9 @@ def main():
         letter = {}
         for character in lower_text:
                 if character in letter:
-                        letter = letter
+                        letter[character] += 1
                 else:
-                        count = lower_text.count(character)
-                        letter[{character}] = count
+                        letter[character] = 1
         print(f"{letter}")
 
 
