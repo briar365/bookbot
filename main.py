@@ -15,7 +15,7 @@ def main():
         print(f"{num_words} words found in the document")
         print("")
         for key in letter:
-                print("The '{key}' character was found {item} times")
+                print(f"The '{key}' character was found {letter[key]} times")
 
 
 def get_num_words(text):
