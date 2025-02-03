@@ -9,7 +9,8 @@ def main():
                         letter[character] += 1
                 else:
                         letter[character] = 1
-        print(f"{letter}")
+        letter = dict(sorted(letter.items(), key=lmada item: item[1]))
+        print(letter)
 
 
 def get_num_words(text):
