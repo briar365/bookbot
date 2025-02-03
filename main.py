@@ -9,7 +9,7 @@ def main():
                         letter[character] += 1
                 else:
                         letter[character] = 1
-        letter = dict(sorted(letter.items(), key=lmada item: item[1]))
+        letter = dict(sorted(letter.items(), key=lambda item: item[1]))
         print(letter)
 
 
