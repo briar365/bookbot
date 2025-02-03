@@ -9,7 +9,7 @@ def main():
                         letter = letter
                 else:
                         count = lower_text.count(character)
-                        letter['{character}'] = count
+                        letter[{character}] = count
         print(f"{letter}")
 
 
